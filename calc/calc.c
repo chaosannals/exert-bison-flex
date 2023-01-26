@@ -5,6 +5,8 @@
 #include <math.h>
 #include "calc.h"
 
+struct symbol symtab[NHASH];
+
 static unsigned symhash(char *sym) {
     unsigned int hash = 0;
     unsigned c;
